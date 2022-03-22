@@ -1,12 +1,52 @@
 *{
     padding: 0;
     box-sizing: border-box;
+    margin: 0;
 }
-
+.btn-primary{
+    background-color:darkseagreen;
+    border:1px solid darkseagreen!important;
+    outline: none;
+}
+.btn-primary:focus{
+    box-shadow: 0 0 0 0.25rem rgb(97 204 101 / 55%);
+    box-shadow:none;
+    outline: none;
+    background-color:darkseagreen;
+}
+.btn-primary:active{
+    box-shadow: 0 0 0 0.25rem rgb(97 204 101 / 55%);
+    background-color:darkseagreen;
+}
+.btn-primary:hover{
+    background-color:rgb(85, 126, 85);
+}
+header{
+    position:fixed;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+    width: 100%;
+    background-color:darkseagreen;
+}
+header nav{
+    background-color:transparent !important;
+}
 /* CAROUSEL */
+.carousel_top{
+    margin-top: 56px;
+}
+.north_travel h3,.tour_day h3,.local_travel h3{
+    font-size: 20px;
+    margin: 17px 0px;
+    padding: 0px 35px;
+    font-weight: bold;
+    text-decoration: underline black solid;
+}
 .carousel img{
     object-fit: cover;
-    height: 250px !important;;
+    height: 250px !important;
+    object-position:center;
 }
 .carousel-item{
     height:250px;
@@ -18,4 +58,140 @@
     top: 50%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
+}
+/* GRID DULICHCACMIEN */
+.trung img{
+    height: 100%;
+}
+.tay img{
+    height:100%;
+}
+.hue img,.hoian img,.danang img,.hochiminh img{
+    height: 100%;
+}
+.local_travel img{
+    display: block;
+    object-fit: cover;
+    transition: .5s;
+}
+.local_travel .row>div{
+    position: relative;
+}
+.trung,.tay,.hue,.hoian,.danang,.hochiminh{
+    transition: .5s;
+}
+
+.local_travel p{
+    position:absolute;
+    bottom:0;
+    left:0;
+    width: 100%;
+    text-align:center;
+    background-color: rgba(240, 248, 255, 0.418);
+    margin-bottom: 0px;
+    font-size: 20px;
+    color:white;
+    font-weight: bold;
+}
+.carousel-2 .carousel-item{
+    height:400px;
+    position: relative;
+}
+.carousel-2 img{
+    object-fit: cover;
+    height: 400px !important;
+    object-position:center;
+}
+.carousel-2 .carousel-caption{
+    position:absolute;
+    width: 70%;
+    top: 55%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+/* //FOOTER */
+footer{
+    background-color:rgba(220, 220, 220, 0.37);
+}
+footer a{
+    text-decoration: none;
+    color:black
+}
+footer  h3{
+    font-size:20px;
+    font-weight:600;
+    margin-top: 15px;
+}
+footer p{
+    margin-bottom: 5px;
+}
+footer iframe{
+    margin-top: 5px;
+}
+
+@media (min-width: 992px){
+    .trung:hover,.tay:hover,.hue:hover,.hoian:hover,.danang:hover,.hochiminh:hover{
+        transform: scale(1.07);
+        z-index: 1000;
+    }
+}
+/* TOURLIST */
+.tour h3{
+    margin-bottom: 0px;
+}
+.tout hr{
+    margin: 5px 0px;
+    border: 1px solid greenyellow;
+}
+/* SUGGESTIONS */
+.accordion-button:not(.collapsed){
+    background-color:#8fbc8f;
+    color: #212529;
+}
+.accordion-button:focus{
+ box-shadow: 0 0 0 0.25rem rgb(97 204 101 / 55%);
+ color: white;
+ color: #212529;
+}
+
+.heading{
+    background-image: url(../img/tour_head.jpg);
+    min-height:300px;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+.heading{
+    display: flex;
+    align-items: center;
+}
+.heading div{
+    display: flex;
+    justify-content: center;
+}
+.heading h1{
+    padding: 10px 15px;
+    border-radius: 3px;
+    font-size: 25px;
+    text-align: center;
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.356);
+}
+.introduction h3 ,.tour .container h3{
+    color: rgba(76, 155, 79, 0.719);
+    text-decoration: underline solid rgb(97 204 101 / 55%) 3px;
+}
+.introduction p{
+    text-align: justify;
+}
+.accordion-body{
+    text-align: justify;
+}
+.head_detail{
+    margin-top:56px;
+}
+
+.head_detail_cap{
+    position: relative;
+    top: -38px;
 }
